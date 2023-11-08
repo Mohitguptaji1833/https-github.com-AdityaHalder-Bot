@@ -2,7 +2,7 @@ import os
 
 from pyrogram import Client, idle
 from pyrogram import filters
-
+from pyrogram.types import *
 
 
 api_id = 12380656
@@ -34,6 +34,16 @@ async def start_photo(client, message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/7d6675f32fd14d710ebc9.jpg",
         caption="**Hi, I am A New Robot For Telegram**",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="😎 Owner",
+                        url=f"https://t.me/kaalware",
+                    ),
+                ],
+           ],
+        )
     )
     
 
