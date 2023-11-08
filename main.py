@@ -39,11 +39,17 @@ async def start_photo(client, message):
                 [
                     InlineKeyboardButton(
                         text="😎 Owner",
-                        url=f"https://t.me/kaalware",
+                        url=f"https://t.me/iamkaal",
                     ),
                     InlineKeyboardButton(
-                        text="🤓 Support",
-                        url=f"https://t.me/KaalGram",
+                        text="🤓 Updates",
+                        url=f"https://t.me/Kaalware",
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="😎 Support",
+                        url=f"https://t.me/kaalgram",
                     ),
                 ],
            ],
