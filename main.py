@@ -7,7 +7,9 @@ from pyrogram.types import *
 
 api_id = 12380656
 api_hash = "d927c13beaaf5110f25c505b7c071273"
-bot_token = "6626130097:AAG5iab-L1-7xYfaDUo57jnANPJj-PhPx0M"
+#bot_token = "6626130097:AAG5iab-L1-7xYfaDUo57jnANPJj-PhPx0M"
+bot_token = "6936455965:AAFAxFAMsligKoN87U-59wQSx0Z8HPTFd4o"
+
 
 for file in os.listdir():
     if file.endswith(".session"):
