@@ -31,7 +31,10 @@ async def start_message(client, message):
 
 @app.on_message(filters.command(["pic"], ["/", "!", "."]) & filters.private)
 async def start_photo(client, message):
-    await message.reply_photo(f"https://telegra.ph/file/7d6675f32fd14d710ebc9.jpg")
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/7d6675f32fd14d710ebc9.jpg",
+        caption="**Hi, I am A New Robot For Telegram**",
+    )
     
 
 app.start()
