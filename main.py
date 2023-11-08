@@ -1,9 +1,20 @@
+import os
+
 from pyrogram import Client, idle
 from pyrogram import filters
+
+
 
 api_id = 12380656
 api_hash = "d927c13beaaf5110f25c505b7c071273"
 bot_token = "6626130097:AAG5iab-L1-7xYfaDUo57jnANPJj-PhPx0M"
+
+for file in os.listdir():
+    if file.endswith(".session"):
+        os.remove(file)
+for file in os.listdir():
+    if file.endswith(".session-journal"):
+        os.remove(file)
 
 app = Client(
     name = "KAALWARE",
@@ -15,7 +26,7 @@ app = Client(
 
 @app.on_message(filters.command("start") & filters.private)
 async def start_message(client, message):
-    message.reply_text(f"Hello, {message.from_user.mention}")
+    await message.reply_text(f"Hello, {message.from_user.mention}")
 
 
 
